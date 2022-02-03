@@ -1,0 +1,124 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.75rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  transition: display 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+
+  .first {
+    flex: 0.1;
+
+    .checkbox {
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #333;
+    }
+  }
+
+  .second {
+    margin: 0 10px;
+    flex: 0.7;
+    font-weight: 600;
+  }
+
+  .taskCompleted {
+    margin: 0 10px;
+    flex: 0.7;
+    opacity: 0.7;
+    font-weight: 550;
+  }
+
+  .third {
+    flex: 0.2;
+  }
+
+  .btn {
+    border: 0;
+    background-color: transparent;
+    opacity: 0.7;
+    font-size: 1rem;
+    margin-inline: 10px;
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    .input {
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 996px;
+      margin: 0.75rem;
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .btn {
+      border: 0;
+      padding: 12px;
+      width: 10rem;
+      border-radius: 10px;
+      background-color: rgb(102, 186, 255);
+      color: white;
+      font-size: 1rem;
+      opacity: 0.9;
+      font-weight: 400;
+      transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      &:disabled {
+        background-color: #ddd;
+      }
+
+      &:focus {
+        outline: 2px solid black;
+        border: 0;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    .first {
+      flex: 0.1;
+    }
+
+    .second {
+      flex: 0.5;
+    }
+
+    .third {
+      flex: 0.4;
+    }
+  }
+}
