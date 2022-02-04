@@ -31,6 +31,8 @@
 }
 
 .container .second {
+  min-width: 12rem;
+  max-width: 12rem;
   margin: 0 10px;
   -webkit-box-flex: 0.7;
       -ms-flex: 0.7;
@@ -39,6 +41,8 @@
 }
 
 .container .taskCompleted {
+  min-width: 12rem;
+  max-width: 12rem;
   margin: 0 10px;
   -webkit-box-flex: 0.7;
       -ms-flex: 0.7;
